@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .neumorph-card {
+    background: #F7F5F3;
+    box-shadow: 8px 8px 16px #d1ccc4, -8px -8px 16px #ffffff;
+  }
+
+  .neumorph-inset {
+    background: #F7F5F3;
+    box-shadow: inset 4px 4px 8px #d1ccc4, inset -4px -4px 8px #ffffff;
+  }
+
+  .neumorph-button {
+    background: #F7F5F3;
+    box-shadow: 6px 6px 12px #d1ccc4, -6px -6px 12px #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .neumorph-button:hover {
+    box-shadow: 10px 10px 20px #d1ccc4, -10px -10px 20px #ffffff;
+  }
+
+  .neumorph-button:active {
+    box-shadow: inset 4px 4px 8px #d1ccc4, inset -4px -4px 8px #ffffff;
+  }
+
+  .neumorph-icon {
+    background: #F7F5F3;
+    box-shadow: 4px 4px 8px #d1ccc4, -4px -4px 8px #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .neumorph-icon:hover {
+    box-shadow: 6px 6px 12px #d1ccc4, -6px -6px 12px #ffffff;
+  }
+
+  .neumorph-input {
+    background: #F7F5F3;
+    box-shadow: inset 3px 3px 6px #d1ccc4, inset -3px -3px 6px #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .neumorph-input:focus {
+    box-shadow: inset 5px 5px 10px #d1ccc4, inset -5px -5px 10px #ffffff;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F5F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E91E63;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a2d2ff;
+}
+
+/* Selection styling */
+::selection {
+  background: #FCE4EC;
+  color: #a2d2ff;
+}
+
+/* Focus styles */
+*:focus {
+  outline: none;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Body styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #F7F5F3;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Link styles */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Button base styles */
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Input and textarea styles */
+input, textarea {
+  font-family: inherit;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Loading animation for images */
+img[src] {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Responsive text sizes */
+@media (max-width: 640px) {
+  .text-6xl {
+    font-size: 3rem;
+  }
+  
+  .text-8xl {
+    font-size: 4rem;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .neumorph-card,
+  .neumorph-inset,
+  .neumorph-button,
+  .neumorph-icon,
+  .neumorph-input {
+    box-shadow: none;
+    border: 2px solid #AD1457;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
