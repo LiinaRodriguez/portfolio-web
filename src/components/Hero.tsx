@@ -79,7 +79,7 @@ const Hero = () => {
             </motion.button>
             
            <motion.a
-              href="/CV.pdf"
+              href="/Lina_Rodriguez_CV.pdf"
               download="Lina_Rodriguez_CV.pdf"
               className="px-8 py-4 rounded-full inline-flex items-center bg-accent-pink text-white font-semibold hover:bg-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05 }}
