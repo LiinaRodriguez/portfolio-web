@@ -16,7 +16,7 @@ const Projects = () => {
         { name: 'Tailwind', icon: SiTailwindcss },
         { name: 'Node.js', icon: SiNodedotjs },
       ],
-      github: 'github.com/liinarodriguez/kaze',
+      github: 'https://github.com/liinarodriguez',
       demo: 'https://agrolog.vercel.app',
       status: 'development', // Added status field
     },
@@ -31,7 +31,7 @@ const Projects = () => {
         { name: 'Tailwind', icon: SiTailwindcss },
         { name: 'Node.js', icon: SiNodedotjs },
       ],
-      github: 'github.com/liinarodriguez/chinese-dictionary',
+      github: 'https://github.com/liinarodriguez/chinese-dictionary',
       demo: 'https://chinese-dictionary-chi.vercel.app',
     },
     {
@@ -43,7 +43,7 @@ const Projects = () => {
         { name: 'Django', icon: SiDjango },
         { name: 'Tailwind', icon: SiTailwindcss },
       ],
-      github: 'github.com/liinarodriguez/coffee-shop',
+      github: 'https://github.com/liinarodriguez/coffee-shop',
       demo: '',
     },
     {
@@ -59,7 +59,7 @@ const Projects = () => {
 
         
       ],
-      github: 'github.com/liinarodriguez/kaze-live-editor',
+      github: 'https://github.com/liinarodriguez/kaze-live-editor',
       demo: '',
       status: 'development', // Added status field
     },
